@@ -1,0 +1,152 @@
+
+.secMain {
+    margin: 0 auto;
+    max-width: 92rem;
+    padding-inline: 1rem;
+}
+
+.C-I-button .Back{
+  width: 120px;
+  height: 50px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  0px 20px;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  background-color: white;
+  margin-bottom: 3em;
+}
+
+.C-I-button .Back:hover {
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.flag-and-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flag-and-info img {
+  width: 35em;
+  height: 25em;
+}
+
+.info-d {
+  margin: 0px;
+  padding-right: 50px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 35em;
+  justify-content: space-between;
+}
+.info-d ul{
+  list-style: none;
+}
+.info-d ul li{
+  margin: 0px;
+  margin-bottom: 1em;
+}
+
+.oth-cuns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.oth-cuns p {
+  margin-right: 1em;
+  font-size: large;
+  align-self: start;
+  margin-top: 10px;
+  width: 10em;
+}
+.con-cuns {
+  display: flex;
+  flex-direction: row;
+  width: 18em;
+  flex-wrap: wrap;
+}
+.con-cuns .Oth-cun{
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.con-cuns button {
+  margin-right: 5px;
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* query */
+
+@media (max-width: 800px) {
+  .flag-and-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flag-a-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .oth-cuns p {
+    width: 15em;
+  }
+
+  .oth-cuns {
+    flex-direction: column;
+  }
+
+  .flag-info,
+  .con-cuns {
+    width: 100%;
+  }
+  .info-d {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1142px) {
+  .flag-and-info {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Dark theme */
+
+.Dark .flag-info{
+  color: white;
+}
+
+.Dark .Back,
+.Dark .Oth-cun{
+  background-color: #2b3945;
+  color: white;
+}

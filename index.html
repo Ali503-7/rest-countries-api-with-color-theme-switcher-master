@@ -1,0 +1,118 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/all.css">
+  <link rel="stylesheet" href="./CSS/C-Info.css">
+
+  <script src="main.js" defer></script>
+
+  <title>Countries</title>
+</head>
+<body class="Light">
+
+  <header>
+    <div class="header">
+      <h1>Where in the world ?</h1>
+      <button class="cuntres-info">
+      </button>
+    </div>
+  </header>
+
+
+  <main>
+
+    <form class="search-filter">
+      <div class="searche">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search for a country..." class="search">
+      </div>
+        <select name="Regino" id="Regino" class="ragion-filter">
+          <option value="" selected hidden>Filter by Regino</option>
+          <option value="all">All Region</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+    </form>
+
+    <div class="contaner">
+      <template data-conturey>
+        <section>
+          <div class="img">
+            <a>
+              <img alt="not found">
+            </a>
+          </div>
+
+          <div class="info">
+            <h1 class="cun-name"></h1>
+            <p>Population : <span population></span></p>
+            <p>Region : <span region></span></p>
+            <p>Capital : <span capital></span></p>
+          </div>
+        </section>
+      </template>
+    </div>
+
+
+    <template cun-detals>
+      <div class="secMain">
+        <div class="C-I-button">
+          <button class="Back">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            Back
+          </button>
+        </div>
+        
+        <div class="flag-and-info">
+        
+          <div class="flag-a-img">
+            <img alt="Not found">
+          </div>
+        
+          <div class="flag-info">
+        
+            <h1></h1>
+        
+            <div class="info-d">
+              <ul>
+                <li class="Nname"><b>Name :</b><span></span></li>
+                <li class="Pop"><b>Population :</b><span></span></li>
+                <li class="Reg"><b>Region :</b><span></span></li>
+                <li class="SRegion"><b>Region :</b><span></span></li>
+                <li class="Cap"><b>Capital :</b><span></span></li>
+              </ul>
+              <ul>
+                <li class="TDom"><b>Level Domain : </b> <span></span></li>
+                <li class="Curr"><b>Currencies : </b><span></span></li>
+                <li class="Lang"><b>Languages : </b><span></span></li>
+              </ul>
+            </div>
+        
+            <div class="oth-cuns">
+              <p><b> Border Countries :</b></p>
+              <div class="con-cuns">
+              </div>
+        
+          </div>
+        </div>
+        </div>
+      </div>
+    </template>
+
+  </main>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
